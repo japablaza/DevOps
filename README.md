@@ -22,10 +22,10 @@ Link from good tutorial
 
 ### Installing Jenkins / Getting source code from Git
 - Debian distribution
-    Install Java (OpenJDK)
-      `sudo apt-get install openjdk-7-jre -y`
-      `sudo apt-get install openjdk-7-jdk -y`
-      `java -version`
+    - Install Java (OpenJDK)
+      - `sudo apt-get install openjdk-7-jre -y`
+      - `sudo apt-get install openjdk-7-jdk -y`
+      - `java -version`
     Add the Security Key from Jenkins repository
       `wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -`
       `sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'`
