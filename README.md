@@ -26,31 +26,31 @@ Link from good tutorial
       - `sudo apt-get install openjdk-7-jre -y`
       - `sudo apt-get install openjdk-7-jdk -y`
       - `java -version`
-    Add the Security Key from Jenkins repository
-      `wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -`
-      `sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'`
-      `sudo apt-get update`
-      `sudo apt-get install jenkins -y`
-      `localhost:8080`
-    Add Jenkins apt-get repository
-      Running on the Jenkins server
-        `sudo apt-get install git -y`
-      localhost:8080
-        `Manage Jenkins`
-          `Manage Plugins`
-            `Available`
-              Search for: `Git plugin`
-                Download now and install after restart
+    - Add the Security Key from Jenkins repository
+      - `wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -`
+      - `sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'`
+      - `sudo apt-get update`
+      - `sudo apt-get install jenkins -y`
+      - `localhost:8080`
+    - Add Jenkins apt-get repository
+      - Running on the Jenkins server
+        - `sudo apt-get install git -y`
+      - localhost:8080
+        - `Manage Jenkins`
+          - `Manage Plugins`
+            - `Available`
+              - Search for: `Git plugin`
+                - Download now and install after restart
 
-    Configure Jenkins with Git
-      Create new jobs
-        Freestyle project
-          Source Code Management
-            Git -->  `<git_URL>/<user>/<repository>`
-                --> Branch
-                --> Other parameters leave by default and `Save`
-      Build Now
-        Check logs and see the progress
+    - Configure Jenkins with Git
+      - Create new jobs
+        - Freestyle project
+          - Source Code Management
+            - Git -->  `<git_URL>/<user>/<repository>`
+              -  --> Branch
+              -  --> Other parameters leave by default and `Save`
+      - Build Now
+        - Check logs and see the progress
 
 ### Integrate with BitBucket: Build after each commit
 - Jenkins in DigitalOcean (You need a public IP for Jenkins)
