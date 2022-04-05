@@ -1,0 +1,6 @@
+[jsservers]
+jsweb01
+jsweb02
+
+[backupservers]
+backup[01:02]
