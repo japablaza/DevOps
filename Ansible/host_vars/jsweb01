@@ -1,0 +1,4 @@
+#Host variables for the jsweb01
+---
+become_ask_pass: True
+ansible_python_interpreter: auto_silent
