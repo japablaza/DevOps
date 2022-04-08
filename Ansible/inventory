@@ -4,3 +4,6 @@ jsweb02
 
 [backupservers]
 backup[01:02]
+
+[openscap]
+open-scapv1
