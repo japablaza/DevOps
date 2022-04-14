@@ -1,0 +1,12 @@
+---
+- name: Open-SCAP
+  hosts: openscap
+  become: true
+
+  tasks:
+    
+    - name: Install Open-Scap
+      dnf:
+        name: 
+          - openscap-scanner
+        state: latest
