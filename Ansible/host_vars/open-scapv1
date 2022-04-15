@@ -1,0 +1,3 @@
+#Host variables for the open-scapv1
+---
+become_ask_pass: True
