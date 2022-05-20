@@ -2,11 +2,15 @@
 - name: Open-SCAP
   hosts: openscap
   become: true
+  vars:
+    scap:
+      - scap-security-guide
+      - openscap-scanner
 
   tasks:
     
-    - name: Install Open-Scap
+    - name: Install "{{ scap }}"
       dnf:
-        name: 
-          - openscap-scanner
-        state: latest
+        name: "{{ scap }}"
+        state: absent
+      loop: "{{ scap }}"

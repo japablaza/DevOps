@@ -1,0 +1,10 @@
+---
+- name: Ansible facts and Variable for jsweb02 server
+  hosts: jsservers
+  tasks:
+
+    - name: Print the OS distro and OS version
+      debug:
+        msg:
+          - " OS distro: {{ ansible_distribution }} "
+          - " OS version: {{ ansible_distribution_version }} "

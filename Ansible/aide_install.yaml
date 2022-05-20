@@ -1,0 +1,14 @@
+---
+- name: Install AIDE
+  hosts: jsservers
+  become: true
+  
+
+
+  tasks:
+
+    - name: Check for updates and Install AIDE Advanced Intrusion Detection Environment
+      dnf:
+        name: aide
+        state: latest
+        update_cache: yes
