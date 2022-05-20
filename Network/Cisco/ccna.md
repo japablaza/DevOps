@@ -67,3 +67,42 @@
     - Physical
 
 ### TCP/IP Protocols and Services
+
+- RDP
+- SNMP UDP:161/162
+- ICMP
+- IGMP
+- TCP
+- UDP
+- ARP
+  - Address Resolution Protocol
+  - Allows hosts to learn the layer 2 address based on layer 3 address
+  - Host broadcasts ARP request onto the cable
+  - Switch forwards out of all ports
+  - Destination host sends ARP reply with its layer 2 address
+  - PC can now encapsulate frames with correct address
+
+### LAN Technology
+
+- 10BaseT: Cat3 cable and distance of 100m
+- 100BaseT: FastEthernet, Cat5 cable and distance of 100
+- 100BaseFX: Two strands of fiber cables
+- 1000BaseT: Cat5, 5e or 6. Uses all 4 pairs of UTP cable
+- 1000BaseX: Fiber for 1Gbps speeds
+- 10GBaseT: Cat6 up to 55m and Cat6a up to 100m
+
+- 10GBaseSR: Sort range 80-300m
+- 10GBaseLR: Long range, single mode fiber, up to 25Km 
+- 10GBaseER: Extended range, up to 40km
+
+- 10GBaseSW
+- 10GBaseLW
+- 10GBaseEW 
+
+- CSMA/CA
+  - Used on wireless networks where end device cannot detect signal
+  - Carrier Sense
+  - Multiple Access
+  - Collision Avoidance - clear signal send from Access Point
+  - RTS: Ready ro Send signal sent from node
+  - CTS: Clear to Send signal from the AP
