@@ -38,4 +38,28 @@
   - UDP checksum
   - Data
 
-## The Network Layer
+## The Network Layer (L3)
+
+- Routing packets to destination and QoS
+- IP is layer 3 protocol
+- IP is connectionless protocol with no ACK at L3
+- IP Addressing
+- IP header
+  - 32 bit
+    - Version 4 bits
+    - hdr 4 bit
+    - Type of service
+    - ID 16 bit
+    - flags 3 bit
+    - Fragment offset 13 bit
+    - TTL 8 bit
+    - Protocol 8 bit
+    - Checksum 16 bit
+    - Source 32 bit
+    - Destination 32 bit
+    - Header options ( 0-40 bytes )
+    - Data ( variable length )
+
+- Unicast traffic goes to a single destination host
+- Broadcast traffic goes to all host on the subnet
+- Multicast traffic goes to multiple interested hosts
