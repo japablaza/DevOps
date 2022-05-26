@@ -63,3 +63,45 @@
 - Unicast traffic goes to a single destination host
 - Broadcast traffic goes to all host on the subnet
 - Multicast traffic goes to multiple interested hosts
+
+## IP Address Class
+
+- Class A
+  - Default mask is /8
+  - Valid network address range from 1.0.0.0 to 126.0.0.0/8
+  - `0`xxxxxxx.xxxxxxxx.xxxxxxxx.xxxxxxxx
+  - 0.0.0.0/8 reserved and signifies `this network`
+  - 0.0.0.1 to 0.255.255.255 are not valid host addresses
+  - 127.0.0.0/8 reserved as the loopback address
+- Class B
+  - Default mask is /16
+  - Valid network address range from 128.0.0.0 to 191.255.0.0/16
+  - `1``0`xxxxxx.xxxxxxxx.xxxxxxxx.xxxxxxxx
+- Class C
+  - Default mask is /24
+  - Valid network address range from 192.0.0.0 to 223.255.255.0/24
+  - `1``1``0`xxxxx.xxxxxxxx.xxxxxxxx.xxxxxxxx
+- Private Addresses
+  - Class A: 10.0.0.0 to 10.255.255.255
+  - Class B: 172.16.0.0. to 172.31.255.255
+  - Class C: 192.168.0.0 to 192.168.255.255
+- Class D
+  - Multicast address
+  - Valid network address range from 224.0.0.0 to 239.255.255.255
+  - These addresses are not allocated to hosts and there is no default subnet mask
+  - `1``1``1``0`xxxx.xxxxxxxx.xxxxxxxx.xxxxxxxx
+- Class E
+  - Experimental and reserved for future use
+  - Valid network address range from 240.0.0.0 to 255.255.255.255
+  - 255.255.255.255 is the broadcast address for this network
+  - `1``1``1``1`xxxx.xxxxxxxx.xxxxxxxx.xxxxxxxx
+
+## CIDR
+
+- Classless Inter-Domain Routing
+- Subnetting
+  - 
+
+## Varialble Length Subnet Masks VLSM
+
+- 
