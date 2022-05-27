@@ -1,0 +1,10 @@
+---
+- name: Install Vagrant and vBox
+  hosts: localdv
+  become: true
+
+  tasks:
+    - name: Install vBox
+      
+      when:
+        - ansible_facts['virtualization_bios'] == vmx
