@@ -45,11 +45,60 @@
   - `ls li FILENAME`
   - `stat FILENAME`
 
-### System Commands
+### System Commands or Linux Commands
 
-- 
+- Terminal emulator
+  - xterm
+  - konsole
+  - Terminator
+  - gnome-terminal
+  - gnome-shell-extension
+- General Commands
+  - cat
+  - cd
+  - find
+  - grep
+  - info
+  - pwd
+  - ls
+  - grep
+  - df
+  - man man
+  - find
+  - mount
+  - sudo
+- Systems Administrator Commands
+  - systemctl
+  - apt
+  - chgrp
+  - chmod
+  - fdisk
+  - iostat
+  - ps
+  - vmstat
+  - yum/dnf
+  - zypper
+- Network Administrator Commands
+  - dig
+  - ip
+  - netstat
+  - ping
+  - traceroute
+- User Administration Commands
+  - adduser
+  - userdel
+  - usermod
+  - deluser
+- Others
+  - id
+  - blkid
+  - ss
+  - free
+  - firefox/lynx
 
 ### General Network Commands
+
+- 
 
 ## System Administration Fundamentals
 
