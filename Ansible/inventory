@@ -7,3 +7,6 @@ backup[01:02]
 
 [openscap]
 open-scapv1
+
+[localdev]
+localhost
