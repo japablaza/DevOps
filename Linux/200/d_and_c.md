@@ -98,7 +98,24 @@
 
 ### General Network Commands
 
-- 
+- IP Addressing and Subnetting for New Users
+  <https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html>
+- NetworkManager
+  - nmcli
+  - nmtui
+  - nm-connection-editor
+- nmcli
+  - nmcli device show
+- ip
+  - ip route
+  - ip addr show
+- ipcalc 1.1.1.1/26  
+- host
+  - host www.home.cl
+- dig
+  - dig www.home.cl
+  /etc/resolv.conf
+
 
 ## System Administration Fundamentals
 
