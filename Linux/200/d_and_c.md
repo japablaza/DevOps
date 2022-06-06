@@ -195,15 +195,107 @@
 
 ### Cloud Cost and Budgeting
 
+- Saving during planning and implementation
+  - Regulated environments mandates to be local
+  - Flexible environment like front-end and firewalls can move to the cloud
+  - Amount of HW
+  - Onsite personnel changes to cloud support, performance and monitoring
+  - EOL HW
+- Saving after the implementation
+  - Using the right size
+  - Autoscaling
+  - Lower performance resources
+  - Idle resources
+  - Use monitoring
+
 ## Security Fundamentals
 
 ### Security Basics
 
+- User accounts
+  - useradd, userdel, usermod
+  - The root user is user id 0 and belong to group 0
+- Sudo and sudoers
+  - /etc/sudoers
+  - /etc/sudoers.d/username
+    username ALL=(ALL:ALL) ALL
+- /etc/passwd
+  - username
+  - password
+  - User ID
+  - Group ID
+  - GECOS
+  - Home
+  - Default Dir
+- /etc/shadow
+  - username
+  - encrypted password
+  - last changed
+  - minimum password age (Number of days before the password may be changed)
+  - maximum password age (Maximum number of days before the user must change their password) - (Must be older than minimum password age)
+  - password warning period (Number of days before the password expires; warnings start)
+  - password inactivity period (number of days after "maximum password age" when password is still accepted)
+  - account expiration date (The expiration date of the account, in days, since January 1, 1970)
+  - reserved field
+- change -l username
+
 ### Data Security
+
+- Linux file permissions security
+  - ls -l
+  - permission filed
+    - type
+      `-` regular file
+      `d` directory
+      `l` soft link
+      `c` character device
+      `b` block device
+      `p` named pipe
+      `s` socket
+- Additional Security Options
+  - Access Control Lists (ACL)
+    - getfacl
+    - setfacl
+  - SELinux
+    - semanage
+    - sestatus
+- password
+  - pam_pwquality.so
+- Last privilege
+  - capabilities
+  - <https://www.cisa.gov/uscert/bsi/articles/knowledge/principles/least-privilege>
+- Gnu Privacy Guard (GPG)
+  - <https://www.gnupg.org/gph/en/manual/c14.html>
+  - <https://gitlab.gnome.org/GNOME/seahorse-nautilus>
+- Encrypted Filesystems
+  - <https://man7.org/linux/man-pages/man8/cryptsetup.8.html>
 
 ### Network Security
 
+- SSL
+  - <https://www.openssl.org/>
+  - <https://www.openssh.com/>
+- Firewalls
+  - Linux firewall is provided by NETFILTER with two version:
+    - iptables
+    - nftables
+  - firewalld is a configuration application that supports both fireall versions above
+  - <https://www.netfilter.org/>
+  - Statefull firewall inspection (aka dynamic packet filtering)
+
 ### System Security
+
+- Intrusion Detection Systems
+  - AIDE <https://aide.github.io/>
+    - /etc/aide/aide.conf
+    - man aide
+    - aideinit
+- Other Intrusion Detection Systems
+  - SELinux
+  - Open Source Tripwire
+  - Fail2ban
+  - OSSEC
+  - Snort
 
 ## DevOps Fundamentals
 
