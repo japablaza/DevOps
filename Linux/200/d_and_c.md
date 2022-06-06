@@ -286,6 +286,7 @@
 ### System Security
 
 - Intrusion Detection Systems
+  - <https://www.redhat.com/sysadmin/linux-security-aide>
   - AIDE <https://aide.github.io/>
     - /etc/aide/aide.conf
     - man aide
