@@ -1,5 +1,5 @@
 ---
-- name: Name of the OS family and Distribution
+- name: Name of the OS family, Distribution, and Version
   hosts: backupservers
   tasks:
     - name: Display OS Family
@@ -8,3 +8,6 @@
     - name: Display OS Distribution
       debug:
         msg: "{{ ansible_distribution }}"
+    - name:
+      debug:
+        msg: "{{ ansible_distribution_version }}"
