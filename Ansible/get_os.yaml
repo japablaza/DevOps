@@ -8,6 +8,9 @@
     - name: Display OS Distribution
       debug:
         msg: "{{ ansible_distribution }}"
-    - name:
+    - name: Distribution Version
       debug:
         msg: "{{ ansible_distribution_version }}"
+    - name: Distribution Release
+      debug:
+        msg: "{{ ansible_distribution_release }}"
