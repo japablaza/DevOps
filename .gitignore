@@ -1,3 +1,15 @@
 Ansible/jsweb02_facts.json
 Ansible/*.json
 Cloud/vagrant/kali/.vagrant/rgloader/loader.rb
+.vagrant/rgloader/loader.rb
+Vagrant/.vagrant/rgloader/loader.rb
+Vagrant/centos7/.vagrant/machines/default/virtualbox/action_provision
+Vagrant/centos7/.vagrant/machines/default/virtualbox/action_set_name
+Vagrant/centos7/.vagrant/machines/default/virtualbox/box_meta
+Vagrant/centos7/.vagrant/machines/default/virtualbox/creator_uid
+Vagrant/centos7/.vagrant/machines/default/virtualbox/id
+Vagrant/centos7/.vagrant/machines/default/virtualbox/index_uuid
+Vagrant/centos7/.vagrant/machines/default/virtualbox/private_key
+Vagrant/centos7/.vagrant/machines/default/virtualbox/synced_folders
+Vagrant/centos7/.vagrant/machines/default/virtualbox/vagrant_cwd
+Vagrant/centos7/.vagrant/rgloader/loader.rb
