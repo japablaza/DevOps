@@ -10,6 +10,7 @@ open-scapv1
 
 [localdev]
 localhost
+server1
 
 [hypervisors]
 Local-HV

@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+# Update the OS
+sudo yum update -y
+
+# Install Nginx Webserver
+sudo yum install -y nginx 
+
+# Enable Nginx service
+sudo systemctl enable nginx --now

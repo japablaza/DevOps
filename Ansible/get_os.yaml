@@ -1,0 +1,16 @@
+---
+- name: Name of the OS family, Distribution, and Version
+  hosts: backupservers
+  tasks:
+    - name: Display OS Family
+      debug:
+        msg: "{{ ansible_os_family }}"
+    - name: Display OS Distribution
+      debug:
+        msg: "{{ ansible_distribution }}"
+    - name: Distribution Version
+      debug:
+        msg: "{{ ansible_distribution_version }}"
+    - name: Distribution Release
+      debug:
+        msg: "{{ ansible_distribution_release }}"
