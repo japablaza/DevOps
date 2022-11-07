@@ -1,0 +1,10 @@
+---
+- name: Check VMs Status
+  hosts: hypervisors
+ # become: true
+  
+  # Listing VMs
+- name: List all VMs
+  community.libvirt.virt:
+    command: list_vms
+  register: all_vms
