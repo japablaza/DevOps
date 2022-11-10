@@ -14,3 +14,6 @@ server1
 
 [hypervisors]
 Local-HV
+
+[vms]
+ubuntu20
