@@ -9,4 +9,5 @@
           - vim
           - git
           - epel-release
+          - ansible
         state: latest
