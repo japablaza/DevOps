@@ -8,4 +8,5 @@
           - parted
           - vim
           - git
+          - ansible
         state: latest
