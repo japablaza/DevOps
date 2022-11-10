@@ -11,4 +11,5 @@
           - git
           - epel-release
           - ansible
+          - terminator
         state: latest
