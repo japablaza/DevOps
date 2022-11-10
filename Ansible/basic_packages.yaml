@@ -1,5 +1,5 @@
 ---
-- hosts: hypervisors
+- hosts: all
   tasks:
     - name: Install basic packages
       ansible.builtin.package:
