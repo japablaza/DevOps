@@ -1,0 +1,7 @@
+---
+- hosts: hypervisors
+  become: true
+  tasks:
+    - name: Update the package cache
+      ansible.builtin.package:
+        update_cache: yes
