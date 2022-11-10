@@ -1,0 +1,11 @@
+---
+- hosts: hypervisors
+  tasks:
+    - name: Install basic packages
+      ansible.builtin.package:
+        name:
+          - tree
+          - parted
+          - vim
+          - git
+        state: latest
