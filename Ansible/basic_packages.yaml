@@ -8,5 +8,5 @@
           - parted
           - vim
           - git
-          - ansible
+          - epel-release
         state: latest
