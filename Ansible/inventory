@@ -9,7 +9,6 @@ backup[01:02]
 open-scapv1
 
 [localdev]
-localhost
 server1
 
 [hypervisors]
