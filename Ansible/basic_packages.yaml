@@ -2,6 +2,7 @@
 - hosts: all
   tasks:
     - name: Install basic packages
+      ignore_unreachable: yes
       ansible.builtin.package:
         name:
           - tree
