@@ -12,4 +12,6 @@
           - epel-release
           - ansible
           - terminator
+          - ipcalc
+          - aide
         state: latest
