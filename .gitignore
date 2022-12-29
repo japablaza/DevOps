@@ -49,3 +49,13 @@ Vagrant/ubuntu/.vagrant/machines/default/virtualbox/vagrant_cwd
 Vagrant/kali/.vagrant/machines/default/virtualbox/vagrant_cwd
 .gitignore
 Vagrant/kali/.vagrant/rgloader/loader.rb
+Vagrant/kali/Vagrantfile
+Vagrant/kalilinux/.vagrant/machines/default/virtualbox/action_provision
+Vagrant/kalilinux/.vagrant/machines/default/virtualbox/action_set_name
+Vagrant/kalilinux/.vagrant/machines/default/virtualbox/box_meta
+Vagrant/kalilinux/.vagrant/machines/default/virtualbox/creator_uid
+Vagrant/kalilinux/.vagrant/machines/default/virtualbox/id
+Vagrant/kalilinux/.vagrant/machines/default/virtualbox/index_uuid
+Vagrant/kalilinux/.vagrant/machines/default/virtualbox/synced_folders
+Vagrant/kalilinux/.vagrant/machines/default/virtualbox/private_key
+Vagrant/kalilinux/.vagrant/rgloader/loader.rb
