@@ -16,3 +16,7 @@ Local-HV
 
 [vms]
 ubuntu20
+
+[clone]
+clone01
+close02
