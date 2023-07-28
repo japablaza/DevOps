@@ -1,0 +1,10 @@
+Vagrant.configure("2") do |config|
+
+  config.vm.define "sitio1" do |web|
+    web.vm.box = "nginx"
+  end
+
+  config.vm.define "sitio2" do |db|
+    db.vm.box = "apache"
+  end
+end
