@@ -1,0 +1,10 @@
+- hosts: "{{ server }}"
+  gather_facts: False
+  vars:
+    - sw: ["wget", "git", "nmap"]
+  tasks:
+    - name: Installing {{ sw }} on {{ server }}
+      yum:
+        name: "{{ item }}"
+        state: present
+      with_items: "{{ sw }}"
