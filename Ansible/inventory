@@ -2,6 +2,10 @@
 rl01
 rl02
 rl03
+rl04
+
+[jenkins]
+rl04
 
 [jsservers]
 jsweb01
