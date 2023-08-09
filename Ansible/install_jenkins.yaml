@@ -1,0 +1,14 @@
+---
+- hosts: jenkins
+  tasks:
+  - name: update the OS
+    dnf:
+      name: '*'
+      state: latest
+      update_cache: yes
+      update_only: yes
+    register: dnf_update_status
+
+  - name: Remove software we do not need
+    dnf:
+      autoremove: yes
