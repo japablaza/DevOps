@@ -13,6 +13,6 @@ if name01 == planta:
 elif name02 == planta:
     print("NO")
 else:
-    print("No quiero " planta)
+    print("No quiero " + planta)
     
     
