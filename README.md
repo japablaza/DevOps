@@ -5,3 +5,4 @@ All about DevOps
 - Jenkins
 - Git
 - Ansible
+- Vagrant 
