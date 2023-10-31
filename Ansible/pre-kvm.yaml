@@ -1,2 +1,9 @@
 ---
-- name: Update systems in preparation for KVM
+- host: hv01.local
+  tasks:
+    - name: Update systems in preparation for KVM
+      become: true
+      dnf:
+        state: present
+        name:
+          
