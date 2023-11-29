@@ -25,6 +25,7 @@ Local-HV
 
 [vms]
 ubuntu20
+menta
 
 [clone]
 clone01
