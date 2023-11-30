@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: Local
   tasks:
     - name: Install basic packages
       ignore_unreachable: yes
