@@ -1,0 +1,9 @@
+---
+- name: Add the Google Chrome GPG Key
+  hosts: menta
+  become: True
+  tasks:
+  - name: Add GPG Key
+    ansible.builtin.apt_key:
+      state: present
+      url: https://dl.google.com/linux/linux_signing_key.pub
