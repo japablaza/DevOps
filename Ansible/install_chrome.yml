@@ -1,0 +1,10 @@
+---
+- name: Install Chrome on the remote host
+  hosts: menta
+  become: True
+  tasks:
+  - name: Install the package
+    apt:
+      name: google-chrome-stable
+      state: latest
+      update-cache: True
