@@ -1,6 +1,6 @@
 ---
 - name: Name of the OS family, Distribution, and Version
-  hosts: backupservers
+  hosts: Local
   tasks:
     - name: Display OS Family
       debug:
