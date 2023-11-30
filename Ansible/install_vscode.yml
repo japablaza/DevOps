@@ -1,0 +1,13 @@
+---
+- name: Install Microsoft Packages
+  become: True
+  hosts: menta
+  tasks: 
+  - name: Run apt-get update
+    ansible.builtin.apt:
+      update_cache: True
+  
+  - name: Install VSCode (code)
+    ansible.builtin.apt:
+      name: code
+      state: latest
