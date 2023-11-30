@@ -1,0 +1,10 @@
+---
+- name: Install Microsoft Repository for VSCode
+  hosts: menta
+  become: True
+  tasks:
+  - name: Add Microsoft Repository
+    ansible.builtin.apt_repository:
+      repo: deb https://packages.microsoft.com/repos/code stable main
+      state: present
+      filename: microsoft-vscode-via-ansible
