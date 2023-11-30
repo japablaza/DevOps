@@ -1,0 +1,9 @@
+---
+- name: Installing Microsoft Key for VSCode
+  hosts: menta
+  become: True
+  tasks:
+  - name: Add the Microsoft GPG Key
+    ansible.builtin.apt_key:
+      state: present
+      url: https://packages.microsoft.com/keys/microsoft.asc
