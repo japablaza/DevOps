@@ -1,0 +1,10 @@
+---
+- name: Add the Google Chrome repository to the remote Host
+  hosts: menta
+  become: True
+  tasks:
+  - name: Add the chrome repo
+    apt_repository:
+      repo: deb http://dl.google.com/linux/chrome/deb/ stable main
+      state: present
+      filename: google-chrome
