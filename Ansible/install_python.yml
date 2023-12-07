@@ -1,0 +1,20 @@
+---
+- name: Install Python and its components
+  hosts: menta
+  become: True
+  tasks:
+  - name: Run apt-get update
+    apt:
+      update_cache: True
+  - name: Install Python is Python3
+    apt:
+      name: python-is-python3
+      state: latest
+  - name: Install Python 3
+    apt:
+      name: python3
+      state: latest
+  - name: Install Pip3
+    apt:
+      name: python3-pip
+      state: latest
