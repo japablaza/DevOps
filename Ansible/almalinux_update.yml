@@ -1,0 +1,13 @@
+---
+- Host: apache
+  name: Update system
+  become: True
+  tasks:
+    - name: Install almalinus-updates
+      ansible.builtin.packages:
+        name:
+          - almalinux-release
+    - name: Update system
+      ansible.buildin.packages:
+        update_cache: yes 
+
