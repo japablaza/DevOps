@@ -38,3 +38,11 @@ All about DevOps
   - `sudo yum install httpd`
   - `sudo systemctl enable httpd --now`
   - `curl localhost`
+
+- AlmaLinux8
+  - `sudo useradd <username>`
+  - `sudo dnf install python3.11`
+  - `ssh-copy-id -i <path/to/pubkey> <username>@server-ip`
+  - Using Ansible
+    - ``
+
