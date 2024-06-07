@@ -33,6 +33,7 @@ close02
 
 [Local]
 menta
+apache.pp
 
 [apache]
 rpmapache
