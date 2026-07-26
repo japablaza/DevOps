@@ -6,7 +6,7 @@ All about DevOps
 - Jenkins
 - Git
 - Ansible
-- Vagrant / VBox
+- LXC (Linux Containers) | VirtualBox/Vagrant
 
 ## Installing
 
@@ -21,6 +21,16 @@ All about DevOps
   - `sudo dnf install virtualbox`
 - Commands
   - `https://gist.github.com/githubfoam/20b87e0447f7b579f1be8b02c36b6125`
+
+#### LXC (Linux Containers) | VirtualBox/Vagrant
+
+- Installation
+   - LXC Installation Guide
+   - `https://linuxcontainers.org/`
+   - `sudo apt install lxc`
+- Commands
+  - `lxc init`
+  - `lxc start <container-name>`
 
 #### Vagrant
 
