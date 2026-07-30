@@ -37,3 +37,12 @@ apache.pp
 
 [apache]
 rpmapache
+
+[Kubernetes]
+master
+worker01
+worker02
+
+[K8s-Servers]
+server1
+server2
