@@ -16,6 +16,12 @@
     - 1 x Storage and Files
     - 1 x Observability and Services
 
+### All
+
+- Configure static IP address. Use [Netplan](https://netplan.readthedocs.io/en/stable/examples/#how-to-configure-a-static-ip-address-on-an-interface)
+
+### Kubernetes
+
 ### Servers : Storage and Files 
 
 - 
