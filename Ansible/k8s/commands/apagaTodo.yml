@@ -1,0 +1,14 @@
+---
+- name: Apaga Todos Los Servidores
+  hosts: kubernetes:servers
+  become: true
+  gather_facts: false
+  tasks:
+    - name: Usa el commando Shutdown Now!
+      community.general.shutdown:
+        delay: 3
+      register: command_output
+
+    - name: Ver los resultados
+      ansible.builtin.command:
+        var: command_output.stdout_lines
