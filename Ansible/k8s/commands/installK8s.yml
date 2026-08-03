@@ -1,0 +1,7 @@
+---
+- name: Instala lo basico para el los servidores de Kubernetes
+  hosts: kubernetes
+  become: true
+  gather_facts: false
+  tasks:
+    - name: Instala los siguientes paquetes: kubelet, kubeadmin, y kubectl
