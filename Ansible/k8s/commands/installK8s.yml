@@ -1,7 +1,27 @@
 ---
-- name: Instala lo basico para el los servidores de Kubernetes
+- name: Instala los kube* para los servidores de Kubernetes
   hosts: kubernetes
   become: true
   gather_facts: false
+  
   tasks:
-    - name: Instala los siguientes paquetes: kubelet, kubeadmin, y kubectl
+    - name: Corre las actualizaciones
+      ansible.builtin.apt:
+        upgrade: dist
+        update_cache: yes
+        
+    - name: Instala los siguientes paquetes kubelet, kubeadmin, y kubectl
+      ansible.builtin.apt:
+        name:
+          - kubeadm
+          - kubectl
+          - kubelet
+    
+    - name: Marcar los paquetes kube* con hold
+      ansible.builtin.dpkg_selections:
+        name: "{{ items }}"
+        selection: hold
+      loop: 
+        - kubeadm
+        - kubectl
+        - kubelet
