@@ -1,0 +1,10 @@
+---
+- name: Create or overwrites any existing configuration in /etc/apt/sources.list.d/kubernetes.list
+  hosts: kubernetes
+  become: true
+  gather_facts: false
+  tasks:
+    - name: Adding the configuration to /etc/apt/sources..list.d/kubernetes.list
+      ansible.builtin.shell: |
+        echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.36/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
+        

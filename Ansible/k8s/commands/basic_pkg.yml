@@ -1,0 +1,13 @@
+---
+- name: Update the apt package index and install packages needed to use the Kubernetes
+  hosts: kubernetes
+  become: true
+  gather_facts: false
+  tasks:
+    - name: Install apt-transport-https
+      ansible.builtin.apt:
+        name: 
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - gpg
