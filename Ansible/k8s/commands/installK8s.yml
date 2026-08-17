@@ -18,10 +18,5 @@
           - kubelet
     
     - name: Marcar los paquetes kube* con hold
-      ansible.builtin.dpkg_selections:
-        name: "{{ items }}"
-        selection: hold
-      loop: 
-        - kubeadm
-        - kubectl
-        - kubelet
+      ansible.builtin.shell:
+        sudo apt-mark hold kubectl kubeadm kubelet  
