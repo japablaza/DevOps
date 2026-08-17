@@ -22,6 +22,12 @@
 
 ### Kubernetes
 
+#### Install Kubernetes with Ansible, run these playbooks
+  - basic_pkg.yml
+  - public_key_for_k8s.yml
+  - add_k8s_apt_repo.yml
+  - installK8s.yml
+
 ### Servers : Storage and Files 
 
 - 
