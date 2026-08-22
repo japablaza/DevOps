@@ -1,0 +1,11 @@
+---
+- name: Actualiza la cache e instala los ultimos paquetes
+  hosts: kubernetes:servers
+  become: true
+  gather_facts: false
+
+  tasks: 
+    - name: Corre las actualizaciones e instala
+      ansible.builtin.apt:
+        upgrade: dist
+        update_cache: yes

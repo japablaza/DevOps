@@ -1,0 +1,23 @@
+---
+- name: Instala y create el archivo de configuracion para containerD
+  hosts: kubernetes
+  become: true
+  gather_facts: false
+
+  tasks:
+    - name: Obtener la llave GPG oficial de Docker
+      ansible.builtin.
+# You need to add the Key and the repo
+
+    - name: Instala containerd.io
+      ansible.builtin.apt:
+        name:
+          - containerd.io
+
+    - name: Crea el directorio containerd
+      ansible.builtin.shell: |
+        sudo mkdir -p /etc/containerd
+
+    - name: Crea un archivo general para containerd config toml
+      ansible.builtin.shell: |
+        sudo containerd config default | sudo tee /etc/containerd/config.toml 
