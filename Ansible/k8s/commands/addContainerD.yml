@@ -9,11 +9,11 @@
       ansible.builtin.apt:
         upgrade: dist
         update_cache: yes
-    - name: Verificar port ca-certificates y curl
+    - name: Instalar ca-certificates y curl
       ansible.builtin.apt:
         name:
-          ca-certificates
-          curl
+          - ca-certificates
+          - curl
     - name: Obtener la llave GPG oficial de Docker
       ansible.builtin.shell: |
         sudo mkdir -m 755 -p /etc/apt/keyrings
@@ -22,6 +22,15 @@
 
     - name: Crear el archivo para el repositorio de Dockers
       ansible.builtin.shell: |
+        sudo tee /etc/apt/sources.list.d/docker.sources <<EOF
+        Types: deb
+        URIs: https://download.docker.com/linux/ubuntu
+        Suites: $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
+        Components: stable
+        Architectures: $(dpkg --print-architecture)
+        Signed-By: /etc/apt/keyrings/docker.asc
+        EOF
+        sudo apt update
 
     - name: Instala containerd.io
       ansible.builtin.apt:
